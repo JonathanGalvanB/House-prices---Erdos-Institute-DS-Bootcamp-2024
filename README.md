@@ -7,4 +7,8 @@
  The housing market consistently changes, especially from year to year and there are many other features of a house that can impact the cost of a home. 
  We decided to see whether we could predict how much a house will sell based on features such as the quality, number of bedrooms, square footage, fireplaces, etc...
 
- This information is useful for realtors, home buyers, home sellers
+ This information is useful for:
+ - Realtors
+ - Home buyers
+ - Home sellers
+ - Investors
