@@ -61,6 +61,43 @@ More details about our pre-processing can be found here: [Data-Cleaning](https:/
 
 ## Data Visualization:
 
+When visualizing data, we thought it would be important to see which features had a collinearity with each other, which would lead us to removing one of those features. We decided to use a correlation heatmap to help us better visualize it.
+
+![image](https://github.com/JonathanGalvanB/House-prices---Erdos-Institute-DS-Bootcamp-2024/assets/71037216/85be54bf-b28a-4ce3-91de-779113cf3272)
+
+We then were able to calculate the correlation values by using the following function:
+
+![image](https://github.com/JonathanGalvanB/House-prices---Erdos-Institute-DS-Bootcamp-2024/assets/71037216/f80b0ac4-695d-43d9-b54f-157f4873e967)
+
+By using these values, we were able to decide which features we could either drop or combine in order to reduce our dimensionality.
+
+![image](https://github.com/JonathanGalvanB/House-prices---Erdos-Institute-DS-Bootcamp-2024/assets/71037216/5b41f03c-8dda-434e-bdb7-f0bd146937a7)
+
+After cleaning up the data a little more, we created a few time series plots to visualize how the years or months may have had an impact on the `SalePrice`
+
+Looking at the Sale Price vs Month Sold, there is no concrete pattern of the month affecting the `SalePrice`. However, we do see that in the Spring/Summer months, we see a few spikes in the `SalePrice`. This makes sense as this is known to be the active season of buyers looking and buying houses, where as the winter months are considered the dead season for the housing market.
+
+![image](https://github.com/JonathanGalvanB/House-prices---Erdos-Institute-DS-Bootcamp-2024/assets/71037216/54460901-e5fe-4134-8427-2c6c047ec382)
+
+Looking at the Sale Price vs Year Sold, there is also no pattern of the years affecting the `SalePrice`. However, again, we do see that there is a max around 2008. 
+
+![image](https://github.com/JonathanGalvanB/House-prices---Erdos-Institute-DS-Bootcamp-2024/assets/71037216/cbcecc1e-0870-4b80-9863-b7a33bfcf8d6)
+
+Lastly, we wanted to visualize whether certain features would have an affect on the `SalePrice`.
+
+We ploted the Sale Price vs Total Condition, and it seems that as the `Total_Condition` score increases, the `SalePrice` also increases, resulting in a positive correlation.
+
+![image](https://github.com/JonathanGalvanB/House-prices---Erdos-Institute-DS-Bootcamp-2024/assets/71037216/bee592e3-c456-4aee-b999-c4da1ffe1bf2)
+
+We decided to try the same thing with the Overall Rating of a house, however, we did not see the same pattern.
+
+![image](https://github.com/JonathanGalvanB/House-prices---Erdos-Institute-DS-Bootcamp-2024/assets/71037216/4084bc43-8cfa-4170-8ccc-b5f0ad2c9a13)
+
+We then thought that the total square footage of a house may impact the `SalePrice`, but looking at the graph, there is no correlation between the 2 features.
+
+![image](https://github.com/JonathanGalvanB/House-prices---Erdos-Institute-DS-Bootcamp-2024/assets/71037216/a374e308-480d-490a-a9d0-e6e63e601f1d)
+
+
 ## Approach:
 
 
