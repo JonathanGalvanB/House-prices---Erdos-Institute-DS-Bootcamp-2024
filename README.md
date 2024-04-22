@@ -28,7 +28,7 @@ The characteristics could be grouped into separate categories:
 
 
 ## Data Pre-Processing:
-Before starting with a modeling approach, it was necessary to clean up our data by removing null values by imputing them with other values, removing outliers by scaling the data, and converting categorical variables into dummy variables.
+Before starting with a modeling approach, it was necessary to clean up our data by removing null values by imputing them with other values, converting categorical variables into dummy variables, and removing outliers by scaling the data.
 
 #### **Imputing:**
 There were a lot of categorical variables where a missing value meant 'None' or the feature was not present in the house. So, we decided to fill those null values in with 'None'.
@@ -40,7 +40,7 @@ For the numerical variables, we decided to use the KNNImputer from the sklearn l
 ![image](https://github.com/JonathanGalvanB/House-prices---Erdos-Institute-DS-Bootcamp-2024/assets/71037216/6c1f6e52-0ddd-4c20-b6de-860908a64953)
 
 #### Dummy Variables:
-For converting our categorical variables to dummy variables, we dedcided to use one-hot encoding and label encoding. 
+For converting our categorical variables to dummy variables, we decided to use one-hot encoding and label encoding. 
 We used 2 different encodings for this process:
 
 The first one was pd.get_dummies():
@@ -57,6 +57,7 @@ To handle outliers, we decided to normalize our data by using the MinMaxScaler f
 
 ![image](https://github.com/JonathanGalvanB/House-prices---Erdos-Institute-DS-Bootcamp-2024/assets/71037216/eb2f3892-c4de-450c-9c86-2f99b33b49a0)
 
+More details about our pre-processing can be found here: [Data-Cleaning](https://github.com/JonathanGalvanB/House-prices---Erdos-Institute-DS-Bootcamp-2024/blob/main/Notebooks/train_data_cleaning.ipynb)
 
 ## Data Visualization:
 
