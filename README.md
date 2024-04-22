@@ -39,6 +39,24 @@ For the numerical variables, we decided to use the KNNImputer from the sklearn l
 
 ![image](https://github.com/JonathanGalvanB/House-prices---Erdos-Institute-DS-Bootcamp-2024/assets/71037216/6c1f6e52-0ddd-4c20-b6de-860908a64953)
 
+#### Dummy Variables:
+For converting our categorical variables to dummy variables, we dedcided to use one-hot encoding and label encoding. 
+We used 2 different encodings for this process:
+
+The first one was pd.get_dummies():
+
+![image](https://github.com/JonathanGalvanB/House-prices---Erdos-Institute-DS-Bootcamp-2024/assets/71037216/bc381ba7-b5f4-4282-9000-bc067f03cefe)
+
+The alternative was using the OrdinalEncoder function from the sklearn library:
+
+![image](https://github.com/JonathanGalvanB/House-prices---Erdos-Institute-DS-Bootcamp-2024/assets/71037216/9b1a69ea-d89a-4068-8d92-ff5b6c5b6878)
+
+#### Outliers:
+
+To handle outliers, we decided to normalize our data by using the MinMaxScaler function from the sklearn library:
+
+![image](https://github.com/JonathanGalvanB/House-prices---Erdos-Institute-DS-Bootcamp-2024/assets/71037216/eb2f3892-c4de-450c-9c86-2f99b33b49a0)
+
 
 ## Data Visualization:
 
