@@ -30,10 +30,14 @@ The characteristics could be grouped into separate categories:
 ## Data Pre-Processing:
 Before starting with a modeling approach, it was necessary to clean up our data by removing null values by imputing them with other values, removing outliers by scaling the data, and converting categorical variables into dummy variables.
 
-#### Imputing:
+#### **Imputing:**
 There were a lot of categorical variables where a missing value meant 'None' or the feature was not present in the house. So, we decided to fill those null values in with 'None'.
 
 ![image](https://github.com/JonathanGalvanB/House-prices---Erdos-Institute-DS-Bootcamp-2024/assets/71037216/8b7f33bd-c34e-462b-b88c-43b82b6b1106)
+
+For the numerical variables, we decided to use the KNNImputer from the sklearn library to impute the closest values that would make sense.
+
+![image](https://github.com/JonathanGalvanB/House-prices---Erdos-Institute-DS-Bootcamp-2024/assets/71037216/6c1f6e52-0ddd-4c20-b6de-860908a64953)
 
 
 ## Data Visualization:
