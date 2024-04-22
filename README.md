@@ -27,8 +27,16 @@ The characteristics could be grouped into separate categories:
 
 
 
-## Data Pre-processing:
+## Data Pre-Processing:
+Before starting with a modeling approach, it was necessary to clean up our data by removing null values by imputing them with other values, removing outliers by scaling the data, and converting categorical variables into dummy variables.
 
+#### Imputing:
+There were a lot of categorical variables where a missing value meant 'None' or the feature was not present in the house. So, we decided to fill those null values in with 'None'.
+
+![image](https://github.com/JonathanGalvanB/House-prices---Erdos-Institute-DS-Bootcamp-2024/assets/71037216/8b7f33bd-c34e-462b-b88c-43b82b6b1106)
+
+
+## Data Visualization:
 
 ## Approach:
 
