@@ -97,10 +97,16 @@ We then thought that the total square footage of a house may impact the `SalePri
 
 ![image](https://github.com/JonathanGalvanB/House-prices---Erdos-Institute-DS-Bootcamp-2024/assets/71037216/a374e308-480d-490a-a9d0-e6e63e601f1d)
 
+More details about our pre-processing can be found here: [Data-Visualization](https://github.com/JonathanGalvanB/House-prices---Erdos-Institute-DS-Bootcamp-2024/blob/main/Notebooks/data_visualization.ipynb)
+
 
 ## Approach:
 
+Originally, we thought using an ARIMA model (time series) would be benificial for predicting the `SalePrice`, however, once trying it, we realized the data did not have evenly spaced date intervals so we were not able to treat it as a time series. 
 
+Furthermore, looking at the graph of the Sale Price vs Year Sold, we can confirm that there is no pattern.
+
+![image](https://github.com/JonathanGalvanB/House-prices---Erdos-Institute-DS-Bootcamp-2024/assets/71037216/1397c517-697e-4440-91d9-586c94ee3691)
 
 ### Model #1:
 
