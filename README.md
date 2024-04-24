@@ -114,9 +114,13 @@ Our next thought was to predict the logarithm of the house prices to uniformize 
 
 We found that using a RandomForestRegressor resulted in a mean squared error of .00357 and the $r^2$ value was .868
 
+![image](https://github.com/JonathanGalvanB/House-prices---Erdos-Institute-DS-Bootcamp-2024/assets/71037216/f91c6567-40d8-4947-9c02-0e6f4c3959c0)
+
 ### Model #2:
 
+We also tried using the XGBoost model, and also resulted in pretty good metrics with a mean squared error of .00335 and an $r^2$ value of .876
 
+![image](https://github.com/JonathanGalvanB/House-prices---Erdos-Institute-DS-Bootcamp-2024/assets/71037216/223c7c8d-906b-4d2e-8880-959213256783)
 
 
 ### Results
