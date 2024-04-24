@@ -112,7 +112,7 @@ Furthermore, looking at the graph of the Sale Price vs Year Sold, we can confirm
 
 Our next thought was to predict the logarithm of the house prices to uniformize the contribution of individual errors. 
 
-We found that using a RandomForestRegressor resulted in a mean squared error of .00357 and the {R^2} value was .868
+We found that using a RandomForestRegressor resulted in a mean squared error of .00357 and the $r^2$ value was .868
 
 ### Model #2:
 
