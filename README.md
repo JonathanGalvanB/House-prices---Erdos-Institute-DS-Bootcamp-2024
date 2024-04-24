@@ -96,7 +96,7 @@ We then thought that the total square footage of a house may impact the `SalePri
 
 ![image](https://github.com/JonathanGalvanB/House-prices---Erdos-Institute-DS-Bootcamp-2024/assets/71037216/a374e308-480d-490a-a9d0-e6e63e601f1d)
 
-More details about our pre-processing can be found here: [Data-Visualization](https://github.com/JonathanGalvanB/House-prices---Erdos-Institute-DS-Bootcamp-2024/blob/main/Notebooks/data_visualization.ipynb)
+More details about our data visualization can be found here: [Data-Visualization](https://github.com/JonathanGalvanB/House-prices---Erdos-Institute-DS-Bootcamp-2024/blob/main/Notebooks/data_visualization.ipynb)
 
 
 ## Approach:
@@ -140,6 +140,8 @@ Logically, these variables make sense that it would be important in predicting a
 
 ![image](https://github.com/JonathanGalvanB/House-prices---Erdos-Institute-DS-Bootcamp-2024/assets/71037216/76a68213-b486-4047-8181-1b1f9e5a22bf)
 
+
+More details about our modeling techniques can be found here: [Data-Modeling](https://github.com/JonathanGalvanB/House-prices---Erdos-Institute-DS-Bootcamp-2024/blob/main/Notebooks/machine_learning.ipynb)
 
 ## Future Improvements
 
