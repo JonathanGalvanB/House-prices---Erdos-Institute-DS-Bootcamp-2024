@@ -26,7 +26,6 @@ The characteristics could be grouped into separate categories:
 - Status of Garage and Basement: Number of cars fitting in the garage, number of bathrooms in the basement, square footage of the finished basement, etc...
 
 
-
 ## Data Pre-Processing:
 Before starting with a modeling approach, it was necessary to clean up our data by removing null values by imputing them with other values, converting categorical variables into dummy variables, and removing outliers by scaling the data.
 
@@ -108,7 +107,7 @@ Furthermore, looking at the graph of the Sale Price vs Year Sold, we can confirm
 
 ![image](https://github.com/JonathanGalvanB/House-prices---Erdos-Institute-DS-Bootcamp-2024/assets/71037216/1397c517-697e-4440-91d9-586c94ee3691)
 
-### Model #1:
+### Model #1: Random Forest Regressor
 
 Our next thought was to predict the logarithm of the house prices to uniformize the contribution of individual errors. 
 
@@ -116,17 +115,38 @@ We found that using a RandomForestRegressor resulted in a mean squared error of 
 
 ![image](https://github.com/JonathanGalvanB/House-prices---Erdos-Institute-DS-Bootcamp-2024/assets/71037216/f91c6567-40d8-4947-9c02-0e6f4c3959c0)
 
-### Model #2:
+### Model #2: XGBoost Regressor
 
 We also tried using the XGBoost model, and also resulted in pretty good metrics with a mean squared error of .00335 and an $r^2$ value of .876
 
 ![image](https://github.com/JonathanGalvanB/House-prices---Erdos-Institute-DS-Bootcamp-2024/assets/71037216/223c7c8d-906b-4d2e-8880-959213256783)
 
+### Model #3: Linear Regression
+
+Lastly, we used a linear regression to use for comparison and found that the mean squared error was .0089 and an $r^2$ value of .844
+
+![image](https://github.com/JonathanGalvanB/House-prices---Erdos-Institute-DS-Bootcamp-2024/assets/71037216/daa17bd7-92b3-4fa4-ac26-2a89531c8bb3)
 
 ### Results
+
+Looking at the metrics of all 3 models, we concluded that the XGBoost Regressor was the best, resulting in the lowest MSE and highest $r^2$ value. 
+
+We also were able to determine the most important features that would help with this model, by looking at the weight. The top 3 important features include:
+- GrLivArea
+- Overall_Rating
+- LotFrontage
+
+Logically, these variables make sense that it would be important in predicting a house price since usually, the bigger the house/lot area, the higher the sale price.
+
+![image](https://github.com/JonathanGalvanB/House-prices---Erdos-Institute-DS-Bootcamp-2024/assets/71037216/76a68213-b486-4047-8181-1b1f9e5a22bf)
 
 
 ## Future Improvements
 
+A future improvement that would be beneficial is creating more visualizations to figure out which features may be important. Also, looking more at the graphs, we should have known that the ARIMA model would not be the best model to use since we did not see any sort of pattern. 
 
 ## Conclusion
+
+Back to our research question and project goal of can we determine whether we can predict how much a house will sell based on numerous features? We determined that we can indeed predict the `SalePrice` based on about 30 features. Using all the features with the Linear Regression resulted in a larger mse, indicating that there was overfitting involved. 
+
+
